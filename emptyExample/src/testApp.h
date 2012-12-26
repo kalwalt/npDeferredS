@@ -33,16 +33,17 @@
 #include "npDeferredShadowPass.h"
 
 #include "PhysicsHandler.h"
-#include "SkyBox.h"
+//#include "SkyBox.h"
+#include "Skybox.h"
 #include "PhysicsDebugDrawer.h"
 class testApp : public ofBaseApp{
-	
+
 public:
-	
+
 	void setup();
 	void update();
 	void draw();
-	
+
 	void keyPressed  (int key);
 	void keyReleased(int key);
 	void mouseMoved(int x, int y );
@@ -50,13 +51,13 @@ public:
 	void mousePressed(int x, int y, int button);
 	void mouseReleased(int x, int y, int button);
 	void windowResized(int w, int h);
-	
+
 
 	TerrainFunctions terrainFunctions;
 
     vector <npMesh *> spheres;
-  
-	
+
+
 
     MainCharacter girl;
     GameCamera camera;
@@ -65,10 +66,10 @@ public:
     npBoneMeshRenderer boneMeshRenderer;
 	TerrainRenderer terrainRenderer;
 	ChunkHandler chunkHandler;
-	
+
 	npDeferredBuffers deferredBuffer;
     npDeferredFinal deferredFinal;
-    
+
     npPointLightRenderer plRenderer;
 	npDirectionalLight dirLight;
 

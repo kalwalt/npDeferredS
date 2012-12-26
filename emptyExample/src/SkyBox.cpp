@@ -1,4 +1,5 @@
-#include "SkyBox.h"
+//#include "SkyBox.h"
+#include "Skybox.h"
 
 void SkyBox::setup(){
 
@@ -18,6 +19,6 @@ void SkyBox::update(){
 void SkyBox::draw(const GameCamera &camera,const float &time){
 
 	colorBox.draw(camera,time);
-	
+
 	elementBox.draw(camera,time);
 }
